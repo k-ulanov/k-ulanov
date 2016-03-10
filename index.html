@@ -755,6 +755,11 @@
                      ["яслей","я́слей"]
                      ];
                      
+                     
+function readurl()
+{
+        console.log(window.location.pathname);
+}
 function read(query)
 {
     search.placeholder = "";
@@ -822,7 +827,7 @@ function placeholder()
                     </script>
                 </head>
     
-    <body onload="placeholder()">
+    <body onload="placeholder(),readurl()">
         <div class="wrapper">
                 <div class="content">
                     <input autofocus id="search" autocomplete="off" value="" onkeyup="read(this.value)">
